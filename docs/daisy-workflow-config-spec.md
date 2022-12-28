@@ -792,9 +792,7 @@ GuestAttribute:
 | Field Name | Type | Description |
 |------------|------|-------------|
 | KeyName | string | The key name to watch for. |
-| SuccessValue | string | *Optional* An expected value to be matched. If set,
-any other value will be considered a failure. If not set, any value will be
-considered a success. |
+| SuccessValue | string | *Optional* An expected value to be matched. If set, any other value will be considered a failure. If not set, any value will be considered a success. |
 
 If the key specified by KeyName is found, the value will be compared to
 SuccessValue for determining success or failure of the step. If SuccessValue is
