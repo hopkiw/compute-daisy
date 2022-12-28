@@ -796,16 +796,13 @@ GuestAttribute:
 
 If the key specified by KeyName is found, the value will be compared to
 SuccessValue for determining success or failure of the step. If SuccessValue is
-not set, any value will be considered a success.
+not set, any value will be considered a success. This example step waits for vm
+"baz" to emit a guest attribute with key "DaisyResult" and value "Success":
 ```json
 "step-name": {
     "WaitForInstancesSignal": [
         {
-            "Name": "foo",
-            "Stopped": true
-        },
-        {
-            "Name": "bar",
+            "Name": "baz",
             "GuestAttribute": {
                 "KeyName": "DaisyResult",
                 "SuccessValue": "Success"
